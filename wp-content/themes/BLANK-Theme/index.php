@@ -28,7 +28,7 @@
     <div id="menu">
         <div id="menu_wrap">
             <div id="menu_hold">
-                <h1>Voorbeelden van Diensten en Activiteiten</h1>
+                <h2>Voorbeelden van Diensten en Activiteiten</h2>
 					<?php
 						$count = 0; 
 						$pages = get_pages(array('child_of' => 7)); 
@@ -38,8 +38,8 @@
 						if ( $count < 2 ) {  // only process 1 ?>
                         <a href="<?php echo get_page_link($page->ID) ?>">
                         <div id="menu_item">
-            				<a href="<?php echo get_page_link($page->ID) ?>"><?php echo get_the_post_thumbnail($page->ID, array(300,169)); ?></a>
-            				<a href="<?php echo get_page_link($page->ID) ?>"><h1><?php echo $page->post_title; ?></h1></a>
+            				<a class="image" href="<?php echo get_page_link($page->ID) ?>"><?php echo get_the_post_thumbnail($page->ID, array(300,169)); ?></a>
+            				<h3><a href="<?php echo get_page_link($page->ID) ?>"><?php echo $page->post_title; ?></a></h3>
                             <?php $text = $page->post_content;
             				    $your_desired_width = 100;
                                 $string = $text;
@@ -67,8 +67,8 @@
 						if ( $count < 2 ) {  // only process 1 ?>
                         <a href="<?php echo get_page_link($page->ID) ?>">
                         <div id="menu_item">
-            				<a href="<?php echo get_page_link($page->ID) ?>"><?php echo get_the_post_thumbnail($page->ID, array(300,169)); ?></a>
-            				<a href="<?php echo get_page_link($page->ID) ?>"><h1><?php echo $page->post_title; ?></h1></a>
+            				<a class="image" href="<?php echo get_page_link($page->ID) ?>"><?php echo get_the_post_thumbnail($page->ID, array(300,169)); ?></a>
+                            <h3><a href="<?php echo get_page_link($page->ID) ?>"><?php echo $page->post_title; ?></a></h3>
             				<?php $text = $page->post_content;
             				    $your_desired_width = 200;
                                 $string = $text;

@@ -6,7 +6,7 @@
 	
 	<?php if (is_search()) { ?>
 	<meta name="keywords" content="barlo, zorg, zorgcoöperatie, helpen, klussen, ouderen, huishouden, coöperatie" />
-    <meta name="author" content="Jochem Veldboom" />
+    <meta name="author" content="Jochem Veldboom, Richard Hinkamp" />
     <meta name="robots" content="index, follow" />	\
     <meta name="revisit-after" content="5 days" />
 	<?php } ?>
@@ -38,27 +38,14 @@
 	
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
-	<?php if ( is_singular() ) wp_enqueue_script('comment-reply'); ?>
-
 	<?php wp_head(); ?>
-    
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-53856560-1', 'auto');
-  ga('send', 'pageview');
-
-</script>  
 </head>
 
 <body <?php body_class(); ?>>
 	
 <div id="header">
 	<div id="header_wrap">
-    	<img src="http://www.zorgcooperatiebarlo.nl/images/logo.png" class="logo" />
+    	<img src="/images/logo.png" class="logo" />
 		<ul class="topnav">
         	<li><?php wp_nav_menu(array('menu' => 'Main Navigation Menu'));?></li>
         </ul>
