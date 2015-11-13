@@ -1,0 +1,56 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{ margin:0; padding:0; background-color:# 0F0;}
+
+#header { width:100%; height: 190px; margin: 0 0 10px 0;}
+#header_wrap { width:1000px; height:190px; border-bottom: 5px solid #78b73b; margin: 0 auto;}
+.logo { height:167px; width:240px; float:left; margin-top: 10px; }
+
+ul.topnav { list-style:none; float:right; margin:165px 10px 0 0;  }
+ul.topnav li {display:inline; margin:0 10px 0 0; font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#67a9d8; }
+ul.topnav li:last-child { margin: 0 0 0 0; }
+ul.topnav li a { color:inherit; text-decoration:none; }
+
+#slider { width:100%; height:350px; margin:0 0 10px 0;}
+#slider_wrap {width:1000px; height:350px; margin: 0 auto;}
+#slidertext { background-color:#78B53B; width:300px; height:350px; float:left;} 
+#slidertext h1 { font-family:Arial, Helvetica, sans-serif; font-size:24px; color:#855b33; padding: 10px; margin:0px;}
+#slidertext p { font-family: Arial, Helvetica, sans-serif; font-size:12px; color:#303437; padding:10px; margin:0px; }
+#slidertext p a {color:inherit;}
+
+#content { width:100%; margin: 0 0 10px 0; float:left;}
+#content_wrap { width:1000px; margin: 0 auto;}
+#content_hold {width:100%; float: left;}
+#left { width: 700px; float:left; font-family: Arial, Helvetica, sans-serif;font-size: 12px;color: #000;}
+#left h1 { font-family:Arial, Helvetica, sans-serif; font-size:18px; color:#67A8D7; }
+#left p { font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#000; padding: 0 20px 0 0;}
+#left .inputtext { margin: 5px 0 5px 0; border: 1px solid #d1d1d1;-moz-box-shadow: inset 0px 2px 10px 1px rgba(0,0,0,0.1);-webkit-box-shadow: inset 0px 2px 10px 1px rgba(0,0,0,0.1);box-shadow: inset 0px 2px 10px 1px rgba(0,0,0,0.1); }
+#left .submit { padding:5px 10px; margin:5px 0 0 0; background-color:#78b73b; border: 0px; -webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px; }
+
+#right{ width: 300px; float: left; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#000;}
+#right h1 { font-family:Arial, Helvetica, sans-serif; font-size:18px; color:#67A8D7; }
+.inputtext { margin: 5px 0 5px 0; border: 1px solid #d1d1d1;-moz-box-shadow: inset 0px 2px 10px 1px rgba(0,0,0,0.1);-webkit-box-shadow: inset 0px 2px 10px 1px rgba(0,0,0,0.1);box-shadow: inset 0px 2px 10px 1px rgba(0,0,0,0.1);}
+.submit { padding:5px 10px; margin:5px 0 0 0; background-color:#78b73b; border: 0px; -webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px; }
+
+#menu { width:100%; margin:0 0 10px 0; float: left;}
+#menu_wrap {width:1000px; margin: 0 auto;}
+#menu_hold {width:100%; float: left; border-bottom: 5px solid #78b73b;}
+#menu_wrap h1 { font-family:Arial, Helvetica, sans-serif; font-size:18px; color:#67A8D7;}
+#menu_wrap a { text-decoration:none;}
+#menu_item{ width: 300px; float: left; margin: 0 50px 0 0; }
+#menu_item:last-child{ margin: 0 0 0 0; }
+#menu_item p { font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#000; padding: 0 20px 0 0;}
+#menu_item h1 { font-family:Arial, Helvetica, sans-serif; font-size:18px; color:#67A8D7; height:42px;}
+#menu_item a { text-decoration:none;}
+
+#meer{ width:199px; float: left;}
+#subpage_text{ width:480px; border-left:1px solid #000; float: left; padding: 0 10px; }
+
+
+ul.meerdiensten{ font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#000; list-style: none; margin:0; padding:0; line-height: 19px;}
+ul.meerdiensten li a { color:inherit;}
+
+
+#footer{ text-align: center; width:100%; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#000; }
+
