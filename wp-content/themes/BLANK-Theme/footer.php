@@ -16,6 +16,14 @@
 		});
 	</script>
 	<?php } ?>
+	<script type="text/javascript" src="/wp-content/themes/BLANK-Theme/fancyBox/source/jquery.fancybox.pack.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#subpage_text a[href]:has(img)")
+					.attr('rel', 'gallery')
+					.fancybox({});
+		});
+	</script>
 
 	<?php wp_footer(); ?>
 

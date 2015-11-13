@@ -32,9 +32,8 @@
 		   ?>
 	</title>
    	
-	<link rel="shortcut icon" href="/favicon.ico">
-	
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
+	<link rel="stylesheet" type="text/css" href="/wp-content/themes/BLANK-Theme/fancyBox/source/jquery.fancybox.css" media="screen" />
 	
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
