@@ -55,7 +55,14 @@
 <?php if (is_home()) { ?>
 <div id="slider">
     <div id="slider_wrap">
-        <?php if ( function_exists( "easingsliderlite" ) ) { easingsliderlite(); } ?>
+		<?php
+		global $wpdb;
+		$query = $wpdb->prepare("SELECT * FROM ".$wpdb->prefix."huge_itslider_images where slider_id = '%d' order by ordering ASC",1);
+		$images = $wpdb->get_results($query);
+		foreach($images as $image) {
+			printf('<div class="slide"><img src="%s" alt="%s"></div>', $image->image_url, $image->name);
+		}
+		?>
     </div>
 </div>
 <?php } ?>    

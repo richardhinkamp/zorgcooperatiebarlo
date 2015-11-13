@@ -1,6 +1,21 @@
 <div id="footer">Copyright © <?=date("Y")?>  -  Zorgcoöperatie Barlo.  -  Alle rechten voorbehouden </div>
 
 	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<?php if (is_home()) { ?>
+	<script src="/wp-content/themes/BLANK-Theme/js/jquery.carouFredSel-6.2.1-packed.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			// Using default configuration
+			$('#slider_wrap').carouFredSel({
+				width: 1000,
+				scroll: {
+					fx: "crossfade",
+					duration: 2000
+				}
+			});
+		});
+	</script>
+	<?php } ?>
 
 	<?php wp_footer(); ?>
 
