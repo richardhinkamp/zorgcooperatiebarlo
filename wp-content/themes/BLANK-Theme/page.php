@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div class="post" id="post-<?php the_ID(); ?>">
-<? 	global $post;
+<?php 	global $post;
 	if (is_tree(7) OR is_tree(9)){?>
 	
     <div id="content">
@@ -9,8 +9,8 @@
             <div id="content_hold">
                 <div id="left">
                     <div id="meer">
-                        <h1>Meer <? if(is_tree(7)){ ?>Diensten <? }else{ ?>Activiteiten <? } ?></h1>
-                        <?	global $post; // Setup the global variable $post
+                        <h1>Meer <?php if(is_tree(7)){ ?>Diensten <?php }else{ ?>Activiteiten <?php } ?></h1>
+                        <?php	global $post; // Setup the global variable $post
 							if ( is_page() && $post->post_parent ) // Make sure we are on a page and that the page is a parent
 								$kiddies = wp_list_pages( 'sort_column=menu_order&title_li=&child_of=' . $post->post_parent . '&echo=0' );
 							else
@@ -24,7 +24,7 @@
 						?>
                     </div>
                     <div id="subpage_text">
-                    	<? 
+                    	<?php 
 						$id=$post; 
 						$post = get_post($id); 
 						$content = apply_filters('the_content', $post->post_content); 
@@ -46,7 +46,7 @@
 	</div>
     
 
-<? }elseif(is_page('actueel')){ ?>
+<?php }elseif(is_page('actueel')){ ?>
     <div id="content">
         <div id="content_wrap">
             <div id="content_hold">
@@ -64,12 +64,12 @@
         </div>
 	</div>
 
-<? }else{ ?>
+<?php }else{ ?>
     <div id="content">
         <div id="content_wrap">
             <div id="content_hold">
                 <div id="left">	                    	
-				<? 
+				<?php 
 						$id=$post; 
 						$post = get_post($id); 
 						$content = apply_filters('the_content', $post->post_content); 
@@ -77,7 +77,7 @@
 				?>
                         <h1><?=$titel?></h1>
                         <p><?=$content?></p>
-                <?		if(is_tree(13)){
+                <?php		if(is_tree(13)){
 					
 							if($_POST['Verzenden']=="Verzenden"){
 	    						$from = $_POST['naam']; // sender
@@ -106,7 +106,7 @@
                                 <textarea name="opmerking" class="inputtext" rows="4" cols="50" required/></textarea><br />
                                 <input type="submit" class="submit" value="Verzenden" name="Verzenden" />
                                 </form>
-							<?
+							<?php
 							}
 							
 							
@@ -123,7 +123,7 @@
             </div>
         </div>
 	</div>
-<? } ?>
+<?php } ?>
 </div>
 
 <?php get_sidebar(); ?>

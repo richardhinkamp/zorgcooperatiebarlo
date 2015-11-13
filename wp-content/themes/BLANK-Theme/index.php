@@ -55,7 +55,7 @@
                                 echo $string;?>
 						</div>
                         </a>
-						<? } ?>
+						<?php } ?>
     					<?php endforeach; ?>
                 <div id="menu_item">
 					<?php
@@ -84,7 +84,7 @@
                                 echo $string;?>  
 						</div>
                         </a>
-						<? } ?>
+						<?php } ?>
     					<?php endforeach; ?>
                 </div>
                 <div id="menu_item">

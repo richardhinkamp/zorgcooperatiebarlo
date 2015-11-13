@@ -71,4 +71,4 @@
         <?php if ( function_exists( "easingsliderlite" ) ) { easingsliderlite(); } ?>
     </div>
 </div>
-<? } ?>    
+<?php } ?>    
